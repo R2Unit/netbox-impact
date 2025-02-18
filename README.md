@@ -1,5 +1,30 @@
 # Netbox Impact - Midleware
 
+## How to use
+
+### Running Middleware
+
+
+**Middleware Sever Mode**
+```bash
+go run main.go -mode=server -netbox-url="https://netbox.quanza.net" -netbox-token="TOKEN_EXAMPLE"
+```
+**Example CURL**
+```bash
+curl -X POST http://localhost/calculateImpact \
+  -H "Content-Type: application/json" \
+  -d '{"device_ids": [], "circuit_ids": [202], "interface_ids": [], "impact_type": "incident-work"}'
+
+```
+
+**Middleware CLI Mode**
+```bash
+go run main.go -mode=server -netbox-url="https://netbox.quanza.net" -netbox-token="TOKEN_EXAMPLE"
+```
+
+
+## Formula
+
 **Formula:**
 
 A forum module is first calculated based on the weight given by the user and the weight per device, which are calculated in the formula below
