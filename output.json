@@ -1,1 +1,0 @@
-{"total_impact":3,"total_impact_before_multiplier":3,"multiplier":1,"breakdown":{"devices":{"count":0,"weight_per_device":5,"impact":0},"circuits":{"items":[{"id":202,"cid":"V242911","redundancy_factor":1,"weight":3,"impact":3}],"total_impact":3},"interfaces":{"count":0,"weight_per_interface":1,"impact":0}}}
